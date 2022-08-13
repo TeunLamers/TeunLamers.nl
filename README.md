@@ -22,7 +22,7 @@ Run the following command to install the project:
 ```
 npm install
 ```
-### Development
+## Development
 Run the following command to run the development environment on you local machine:
 ```
 npm run dev
