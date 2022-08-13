@@ -10,7 +10,6 @@ Written using:
 * Tailwind
 
 ## Getting started
----
 
 ### Dependencies
 
@@ -32,8 +31,6 @@ In addition you have to run the typescript compiler
 ```
 tsc 
 ```
----
-
 ## License
 none atm :)
 
