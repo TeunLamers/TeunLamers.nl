@@ -1,17 +1,17 @@
 ---
-// Welcome to Astro! Everything between these triple-dash code fences
-// is your "component front matter". It never runs in the browser.
-console.log('This runs in your terminal, not the browser!');
+
+import Layout from '@layouts/Layout.astro'
+import { ReactTest } from '@react/ReactTest.jsx'
+import { typescriptTest } from '@components/header';
+import SvelteTest from '@svelte/SvelteTest.svelte';
 ---
-<!-- Below is your "component template." It's just HTML, but with
-     some magic sprinkled in to help you build great templates. -->
-<html>
-  <body>
-    <h1>Hello, World!</h1>
-  </body>
-</html>
-<style>
-  h1 {
-    color: orange;
-  }
-</style>
+
+<Layout>
+    <ReactTest>
+        <h1>inside react</h1>
+        { typescriptTest }
+        <SvelteTest>
+            <h1>inside svelte</h1>
+        </SvelteTest>
+    </ReactTest>
+</Layout>

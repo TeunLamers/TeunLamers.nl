@@ -5,7 +5,8 @@ Public repository for:
 
 Written using:
 * Astro
-* Mdx
+* React
+* Svelte
 * Tailwind
 
 ## Getting started
@@ -22,10 +23,14 @@ Run the following command to install the project:
 ```
 npm install
 ```
-### Develop
+### Development
 Run the following command to run the development environment on you local machine:
 ```
 npm run dev
+```
+In addition you have to run the typescript compiler
+```
+tsc 
 ```
 ---
 

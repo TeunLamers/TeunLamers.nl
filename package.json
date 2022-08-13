@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro check && tsc --noEmit && astro build",
     "preview": "astro preview"
   },
   "repository": {
@@ -25,7 +25,12 @@
     "astro": "^1.0.5"
   },
   "devDependencies": {
-    "@astrojs/mdx": "^0.9.0",
-    "@astrojs/tailwind": "^1.0.0"
+    "@astrojs/react": "^1.0.0",
+    "@astrojs/svelte": "^1.0.0",
+    "@astrojs/tailwind": "^1.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "svelte": "^3.49.0",
+    "typescript": "^4.7.4"
   }
 }
