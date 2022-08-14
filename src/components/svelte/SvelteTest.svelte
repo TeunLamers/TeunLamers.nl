@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	const test = 'Svelte test';
 </script>
 

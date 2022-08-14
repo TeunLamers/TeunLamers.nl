@@ -29,8 +29,12 @@ npm run dev
 ```
 In addition you have to run the typescript compiler
 ```
-tsc 
+tsc -w
 ```
+
+## Todo
+- [ ] Update build command to astro check && tsc --noEmit && astro build
+
 ## License
 none atm :)
 
