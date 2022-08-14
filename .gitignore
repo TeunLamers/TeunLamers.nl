@@ -1,3 +1,5 @@
 ./node_modules
 ./plubic
+./dist
 node_modules/
+dist/
