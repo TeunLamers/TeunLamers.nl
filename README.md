@@ -33,8 +33,10 @@ tsc -w
 ```
 
 ## Todo
+- [ ] Add links to read me
 - [ ] Update build command to astro check && tsc --noEmit && astro build
+- [ ] Figure out why tailwind doesn't work in svelte and react components
 
 ## License
-none atm :)
+[MIT](https://github.com/TeunLamers/TeunLamers.nl/blob/main/LICENSE.md)
 
