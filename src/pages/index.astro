@@ -1,23 +1,17 @@
 ---
+import { ReactTest } from "@components/react/ReactTest";
+import SvelteTest from "@components/svelte/SvelteTest.svelte";
 import Layout from "@layouts/Layout.astro";
 
 const title = "Teun Lamers — Home page"
-const description = "A personal homepage"
+const description = "A personal homepage of Teun Lamers"
 ---
 
 <Layout title={title} description={description}>
-  <div class="flex items-center justify-center h-screen bg-gray-200">
+  <div class="flex justify-center h-screen bg-gray-200">
     <div class="container">
-      <div class="bg-white rounded-lg shadow-lg p-5 md:p-20 mx-2 lg:p-20">
-        <div class="text-center">
-          <h2
-            class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
-            Teun<span class="text-indigo-600"> Lamers</span>
-          </h2>
-          <h3 class='text-xl md:text-3xl mt-10'>Coming Soon</h3>
-          <p class="text-md md:text-xl mt-10">A personal homepage.</p>
-        </div>
-      </div>
+      <ReactTest />
+      <SvelteTest client:load/>
     </div>
   </div>
 </Layout>
