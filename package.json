@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/TeunLamers/TeunLamers.nl#readme",
   "dependencies": {
-    "astro": "^1.0.5"
+    "astro": "^7.1.0"
   },
   "devDependencies": {
     "@astrojs/react": "^1.0.0",
