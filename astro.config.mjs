@@ -1,20 +1,18 @@
-import { defineConfig } from 'astro/config'; 
-
-import tailwind from "@astrojs/tailwind";
+import { defineConfig } from "astro/config";
+import tailwindcss from "@tailwindcss/vite";
 import react from "@astrojs/react";
 import svelte from "@astrojs/svelte";
 
-// https://astro.build/config
+// https://docs.astro.build/en/reference/configuration-reference/
 export default defineConfig({
-  site: "https://teunlamers.github.io",
+  site: "https://teunlamers.nl",
   markdown: {
     shikiConfig: {
-      theme: 'dracula'
-    }
+      theme: "dracula",
+    },
   },
-  integrations: [
-    tailwind(),
-    react(), 
-    svelte()
-  ],
+  integrations: [react(), svelte()],
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });
