@@ -12,6 +12,10 @@ export default defineConfig({
     },
   },
   integrations: [react(), svelte()],
+  server: {
+    // Vite blocks unknown Host headers, also in `astro preview` (our start command).
+    allowedHosts: ["teunlamers.nl", "www.teunlamers.nl"],
+  },
   vite: {
     plugins: [tailwindcss()],
   },
